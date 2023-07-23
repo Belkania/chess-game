@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: linear-gradient(to right, aqua, #09818f);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.firstColumn,
+.secondColumn {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.blackSquere {
+  background-color: #054d55;
+}
+.whiteSquere {
+  background-color: white;
+}
+.symbolsBlack {
+  color: white;
+  font-size: 20px;
+}
+.symbolsWhite {
+  color: black;
+  font-size: 20px;
+}
+.columnSide {
+  position: absolute;
+}
+.rowSide {
+  position: absolute;
+  bottom: 59px;
+}
+.passive {
+  display: none !important;
+}
+.startBox {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 18, 52);
+}
+.startButton {
+  width: 50%;
+  height: 10%;
+  /* background: linear-gradient(to right, aqua, #09818f); */
+  background-color: #09818f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(35, 18, 52);
+  cursor: pointer;
+}
+.startButton:hover {
+  transition: 1s ease;
+  background: linear-gradient(to right, aqua, #09818f);
+}
