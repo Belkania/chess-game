@@ -4,6 +4,7 @@ const startBox = document.querySelector(".startBox");
 const startButton = document.querySelector(".startButton");
 const mainContainer = document.querySelector(".mainContainer");
 
+//Creating Array
 let masiv = [
   {
     name: "a1",
