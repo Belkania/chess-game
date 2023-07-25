@@ -13,14 +13,29 @@ body {
 .mainContainer {
   width: 600px;
   height: 600px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
-.firstColumn,
-.secondColumn {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.slot {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slotNumbers {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.slotLetters {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+}
+.imagesInSqueers {
+  width: 70px;
+  height: 70px;
 }
 .blackSquere {
   background-color: #054d55;
@@ -28,13 +43,15 @@ body {
 .whiteSquere {
   background-color: white;
 }
-.symbolsBlack {
+.blackSymbols {
   color: white;
   font-size: 20px;
+  font-weight: 300;
 }
-.symbolsWhite {
-  color: black;
+.whiteSymbols {
+  color: #054d55;
   font-size: 20px;
+  font-weight: 300;
 }
 .columnSide {
   position: absolute;
@@ -58,7 +75,6 @@ body {
 .startButton {
   width: 50%;
   height: 10%;
-  /* background: linear-gradient(to right, aqua, #09818f); */
   background-color: #09818f;
   display: flex;
   justify-content: center;
